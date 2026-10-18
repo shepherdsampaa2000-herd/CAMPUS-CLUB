@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #263449;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #123c69, #1f6f8b);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    width: 95%;
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+.form-section,
+.clubs-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #123c69;
+    margin-bottom: 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-grid label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccd5e0;
+    border-radius: 6px;
+    font: inherit;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #5ca9d6;
+    border-color: #1f6f8b;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background: #1f6f8b;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #123c69;
+}
+
+#cancelButton {
+    background: #64748b;
+}
+
+#refreshButton {
+    background: #123c69;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e1e7ef;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #eaf1f8;
+    color: #123c69;
+    white-space: nowrap;
+}
+
+td {
+    font-size: 14px;
+}
+
+td button {
+    margin: 2px;
+    padding: 7px 10px;
+}
+
+.edit-button {
+    background: #d18a13;
+}
+
+.delete-button {
+    background: #c0392b;
+}
+
+#message {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 650px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-section,
+    .clubs-section {
+        padding: 16px;
+    }
+}
