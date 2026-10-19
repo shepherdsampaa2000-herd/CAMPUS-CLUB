@@ -1,4 +1,4 @@
-const API = 'https://campus-club-4t2k.onrender.com/api/clubs';
+const API = 'https://campus-club-3.onrender.com/api/clubs';
 
 const form = document.getElementById('clubForm');
 const table = document.getElementById('clubsTable');
